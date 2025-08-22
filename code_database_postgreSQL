@@ -1,0 +1,72 @@
+Microsoft Windows [Versión 10.0.26100.4652]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Lab Programacion>cd ..
+
+C:\Users>cd ..
+
+C:\> "Program Files"
+""Program Files"" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\>cd "Program Files"
+
+C:\Program Files>cd PostgreSQL
+
+C:\Program Files\PostgreSQL>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: E01C-CCC2
+
+ Directorio de C:\Program Files\PostgreSQL
+
+28/07/2025  09:29 a. m.    <DIR>          .
+22/08/2025  11:17 a. m.    <DIR>          ..
+28/07/2025  09:21 a. m.    <DIR>          12
+28/07/2025  09:30 a. m.    <DIR>          psqlODBC
+               0 archivos              0 bytes
+               4 dirs  318.729.056.256 bytes libres
+
+C:\Program Files\PostgreSQL>cd 12
+
+C:\Program Files\PostgreSQL\12>cd bin
+
+C:\Program Files\PostgreSQL\12\bin>psql -U postgres
+Contraseña para usuario postgres:
+
+psql (12.11)
+ADVERTENCIA: El código de página de la consola (850) difiere del código
+            de página de Windows (1252).
+            Los caracteres de 8 bits pueden funcionar incorrectamente.
+            Vea la página de referencia de psql «Notes for Windows users»
+            para obtener más detalles.
+Digite «help» para obtener ayuda.
+
+postgres=# \l
+                                          Listado de base de datos
+  Nombre   |  Due±o   | Codificaci¾n |        Collate        |         Ctype         |      Privilegios
+-----------+----------+--------------+-----------------------+-----------------------+-----------------------
+ postgres  | postgres | UTF8         | Spanish_Colombia.1252 | Spanish_Colombia.1252 |
+ template0 | postgres | UTF8         | Spanish_Colombia.1252 | Spanish_Colombia.1252 | =c/postgres          +
+           |          |              |                       |                       | postgres=CTc/postgres
+ template1 | postgres | UTF8         | Spanish_Colombia.1252 | Spanish_Colombia.1252 | =c/postgres          +
+           |          |              |                       |                       | postgres=CTc/postgres
+(3 filas)
+
+
+postgres=# \list
+                                          Listado de base de datos
+  Nombre   |  Due±o   | Codificaci¾n |        Collate        |         Ctype         |      Privilegios
+-----------+----------+--------------+-----------------------+-----------------------+-----------------------
+ postgres  | postgres | UTF8         | Spanish_Colombia.1252 | Spanish_Colombia.1252 |
+ template0 | postgres | UTF8         | Spanish_Colombia.1252 | Spanish_Colombia.1252 | =c/postgres          +
+           |          |              |                       |                       | postgres=CTc/postgres
+ template1 | postgres | UTF8         | Spanish_Colombia.1252 | Spanish_Colombia.1252 | =c/postgres          +
+           |          |              |                       |                       | postgres=CTc/postgres
+(3 filas)
+
+
+postgres=# CREATE DATABASE banking;
+CREATE DATABASE
+postgres=# \c banking
+Ahora está conectado a la base de datos «banking» con el usuario «postgres».
+banking=#
