@@ -79,7 +79,7 @@ DATABASES = {
         'NAME' : 'banking',
         'USER' : 'postgres',
         'PASSWORD' : 'unicesmag',
-        'PORT' : '5432',
+        'PORT' : '5433',
     },
     
     'local': {
