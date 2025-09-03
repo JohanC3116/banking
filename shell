@@ -1,0 +1,13 @@
+ py manage.py shell
+6 objects imported automatically (use -v 2 for details).
+
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from authentication.models import User
+>>> data = User(firstname= "Johan", lastname="Calderon")
+>>> data.save()
+>>> User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>]>
+>>> exit()
+now exiting InteractiveConsole...

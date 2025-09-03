@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<html>
+<head>
+</hgead>
+
+<body>
+    </p>
+    -->
+    <h1 style="color: red; text-aling: center;">
+        Bienvenido a mi pagina web
+    </h1>
+    <p style="front _size: 18px; color: blue;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum  que exercitatonem quas voluptatemp, illo distinctio quae, voluptates n explicabo?
+    <meta charset="UTF-8"
+<body>
+    <h1>
+        Bienvenido a mi pagina web
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum  que exercitatonem quas voluptatemp, illo distinctio quae, voluptates n explicabo?  
+<html>
+<head>
+    <title> Appilying css3</title>
+    <style>
+        h1{
+            Sets the color of an element´s text 
+            widely available acrosss major browsers (Baseline since 2015)
+        }   syntax: <color>
+
+        p {
+            font- size; 18px;
+        }
+        h1{
+            color; red;
+            text -aling; center;
+        }
+
+        p {
+            font- size; 18px;
+        }
+    <!--
+    <h1 style="color: read; text-aling; center;">
