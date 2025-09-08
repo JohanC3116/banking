@@ -5,23 +5,17 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    initial = True
-
     dependencies = [
+        ('authentication', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='User',
+            name='Department',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('firstname', models.CharField(max_length=20)),
-                ('lastname', models.CharField(blank=True, max_length=20)),
-                ('mobile_phone', models.CharField(blank=True, max_length=20, null=True)),
-                ('address', models.CharField(blank=True, max_length=100, null=True)),
-                ('email', models.EmailField(max_length=254, unique=True)),
-                ('password', models.TextField()),
-                ('status', models.BooleanField(default=True)),
+                ('name', models.CharField(max_length=100)),
+                ('abrev', models.CharField(blank=True, max_length=10, null=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('deleted_at', models.DateTimeField(blank=True, null=True)),

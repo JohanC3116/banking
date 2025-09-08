@@ -79,8 +79,8 @@ DATABASES = {
         'HOST' : 'localhost',
         'NAME' : 'banking',
         'USER' : 'postgres',
-        'PASSWORD' : 'unicesmag',
-        'PORT' : '5433',
+        'PASSWORD' : 'postgres',
+        'PORT' : '5432',
     },
     
     'local': {
